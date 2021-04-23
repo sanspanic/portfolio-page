@@ -1,38 +1,39 @@
-.App {
-  text-align: center;
+.bg-conic-yellow {
+  background: conic-gradient(from -270deg at 50% -5%, yellow, yellowgreen);
+}
+.typewriter-text {
+  overflow: hidden;
+  position: relative;
+  width: 18em;
+  border-right: 2px solid rgba(0, 0, 0, 0.747);
+  font-size: 35px;
+  white-space: nowrap;
+  animation: typewriter 3s steps(24) 1s 1 normal both,
+    blinkTextCursor 1000ms steps(24) infinite normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*  animation-name: typewriter;
+  animation-duration: 5s;
+  animation-timing-function: steps(24);
+  animation-delay: 1s;
+  animation-iteration: 1;
+  animation-diretion: normal; 
+  animation-fill-mode: both */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes typewriter {
   from {
-    transform: rotate(0deg);
+    width: 0;
   }
   to {
-    transform: rotate(360deg);
+    width: 18em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(0, 0, 0, 0.747);
+  }
+  to {
+    border-right-color: transparent;
   }
 }
