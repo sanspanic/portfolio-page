@@ -91,3 +91,20 @@ a.active {
     border-right-color: transparent;
   }
 }
+
+@media only screen and (max-width: 670px) {
+  .typewriter-text {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .typewriter-text {
+    font-size: 22px;
+  }
+}
+@media only screen and (max-width: 380px) {
+  .typewriter-text {
+    font-size: 18px;
+  }
+}

@@ -9,9 +9,9 @@ const Welcome = () => {
         hello, my nAme is sAndy.
       </h1>
       <div className="">
-        <div className="flex font-monocut justify-around items-center">
-          <WomanServer width="400" />
-          <div className="py-5 mr-5">
+        <div className="flex flex-col-reverse sm:flex-row font-monocut justify-around items-center font-monocut">
+          <WomanServer />
+          <div className="sm:py-5 mr-5">
             <div className="border-l-4 border-neon-purple pl-10">
               <p>I am a full-stack software engineer.</p>
               <br></br>
@@ -22,7 +22,7 @@ const Welcome = () => {
               <br></br>
               <p className="max-w-prose">
                 I firmly believe that tech can and should be a{" "}
-                <b className="font-open">force for good</b>, and it is its
+                <b className="font-open">force for good</b>, and it is this
                 creative and transformative potential that motivates me to code.
               </p>
               <br></br>

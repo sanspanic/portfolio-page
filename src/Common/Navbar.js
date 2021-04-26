@@ -6,7 +6,12 @@ const Navbar = () => {
   return (
     <nav className="navbar py-2 bg-conic-yellow flex justify-between items-center font-monocut px-5 border-b">
       <ul>
-        <img width="200" src={Logo}></img>
+        <img
+          alt="logo"
+          className="hidden md:inline"
+          width="200"
+          src={Logo}
+        ></img>
       </ul>
       <ul className="flex">
         <NavLink className="px-3" exact to="/">
