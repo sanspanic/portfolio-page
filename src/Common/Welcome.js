@@ -1,6 +1,5 @@
 import React from "react";
 import WomanServer from "../SVGs/WomanServer";
-import Logo from "../Assets/croppedLogo.png";
 
 const Welcome = () => {
   return (
@@ -22,8 +21,9 @@ const Welcome = () => {
               <br></br>
               <p className="max-w-prose">
                 I firmly believe that tech can and should be a{" "}
-                <b className="font-open">force for good</b>, and it is this
-                creative and transformative potential that motivates me to code.
+                <b className="font-open highlight">force for good</b>, and it is
+                this creative and transformative potential that motivates me to
+                code.
               </p>
               <br></br>
               <button className="mx-auto font-open font-bold rounded  px-10 py-3 bg-gradient-green text-white button-shadow">

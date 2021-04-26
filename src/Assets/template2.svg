@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 53" width="272" height="106">
+	<title>template</title>
+	<defs>
+		<image  width="136" height="53" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAA1AQMAAACgIDG6AAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA8O1GZMyjGwAAAAJ0Uk5TAP9bkSK1AAABv0lEQVR4nE2TMXIsIQxERU0woY7AUTga48jhP4KvwpYPsEcwjhwaZ/wqGbklsWVvsvDoZqAliI5FPImSkA3tdwrlETMMnUwqHQQz05L/1Rbrm8Ci0DBcOVwFpMWshKbOZKT8IeMwV4Wrhkv7aRoVkxtIOvhBdJOezbUWhu7CJuWz4RJCx7drTh3l3uiYQmcQ1l7/dRx50fnfXVmbcsMFoPlyTfl8XyB5CPF7kLfXxR3XX5Rv7qovzwJNbUIlNJrv08gFcnOyysuAS2lRfZIgpXNLi4Q0uUaqNm7IVGgFmVUv7qfNV3LXqErckLAkCU1X1KshbDk2aYiAO+qzzhmuCzFxQ32ER2iedBi5SPImyBAuxcFyN1cKckMhJDfTHEgV4bxiUcr1IBfxB8iq3jEnCJK9Y1HUNex9w2/DCG0inj6CWu7K1lD0KKppsncRY3crsZHiPchKQawbrKE2Ga5RqrvjNknqHcfifWQuHMY+nO3OWIIG8XpXjl8yg7jmMtc5bLA1ZBovJvkrQE2N5OaaAmda/n5KaJCyZwANFlds6hmAYLFa+PZ2wqW+oQXr54bGSmANTPF20rT9146nuAu+HzWnUy0egERhAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer 1" href="#img1" x="0" y="0" />
+</svg>

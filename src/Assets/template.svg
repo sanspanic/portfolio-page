@@ -1,0 +1,10 @@
+<svg version="1.2" baseProfile="tiny-ps" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 136 53" width="136" height="53">
+	<title>template</title>
+	<defs>
+		<image  width="136" height="53" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIgAAAA1CAMAAACtMFPLAAAAAXNSR0IB2cksfwAAAQ5QTFRF8O1G8O1G8OxF7+xG7+xF8OxF7+1G7+xG7+xF8OxF7+1E7+xF7uxE8OtG7epD5uYzAAAA7OxE7+xG8O1F7+xG8O1G7+xF8OxG7+1F8O1F8O1F8OxF8OxG7+1G8OxF7+1F7+xF8O1F8OxG7+xF7utG7ulF7+xD7+tF7+xE8OtG7ulD7t1EzMwz7+pE7utE8OxG8O1F7+1F7+xF7+xG7+tF7u1E7+tF7+xF7+xG7+xF8OxG7utE7utD7+xE8OxG8OxF7+1G8O1F7+1F5+c97+xF7edB8O1F7+1G7+tE29sk7e1E7+1F7+ZC7+xF8OxG7+xG8O1F7+1F8OtF7uxG7u1G7+xF7+1F7+xF7+xF7+xFhNlMpQAAAFp0Uk5T//z34+Xo3+bVyH+RbGZICgApnba+mc7c4Pv/1tjU2dKyprurWDtQP08zLg8FMXWl/sOerIKKcvy7vMlLTFLM6dDd8BW/K6pxjgc43x/015K4b2R5i+bBn7G9ICDVHAAAAaNJREFUeJztmAlTgkAUgDEgiCQRMTPBSDJTKyvS0i4tu+0+tP//R+LSHBaGJnUeY/vNmx1297H7scsOMxAEBvPviBDEDElBTGvOTM8yLDvHcfNRfiEmBBHneTEhSlLSiMXUUtpj3OU0mWFkhZJZo2RkljJLJ8zrrFlS2ZWMuprTRHEtv17IbxSKpXLg5P5sbm17mGgjjPh3PEQqICLoK7WzCyKyh66IDiKyj4okQUSq6GmsgojUEJGDw0pOr+Q0K3T/cpAznKl59NatlrrulfmT0PA4NhgMBoOZUhSQb54gHLlFZCCRY7cIBSRSDMvWICtibc3J6WnqrJmim2Y5FC0r7Auj16zSTlqLdhpT/S70dmcQ2hnHCTvt3C3CCMJFe5S3fVwowuUVtIOFHLuGVrBh4iS0go2CnCMgsmERYUoh2Rq2fAOtYCOH5fhSwu0dCy1hYn1reGgLg/vgH2ATofPgEomQj/Ua9/SrX3JjpeW3NHTjWXzh4xMX6BTzr2/Rd+4jcLPo9qfalXr9UK3odb88q4NGo0U1Y1CVEqrvQ2MwmOngG15GtYpvvOXuAAAAAElFTkSuQmCC"/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer 1" href="#img1" x="0" y="0" />
+</svg>

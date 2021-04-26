@@ -2,8 +2,44 @@
   background: conic-gradient(from -270deg at 50% -5%, yellow, yellowgreen);
 }
 
+.bg-pure-yellow {
+  background-color: #f9ff00;
+}
+
+.bg-gradient-navbar {
+  background: #ffb75e; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #f9ff00,
+    #ffb75e
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #f9ff00,
+    #ffb75e
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .bg-gradient-purple {
   background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
+}
+
+.navbar ul a:hover {
+  text-decoration: underline;
+}
+
+.highlight {
+  background-image: url("./Assets/highlight-yellow.svg");
+  background-position: 50% 50%;
+  padding-bottom: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  /*   background-color: #f1fbe2;
+ */
+  background-color: #e6f5f9;
 }
 
 .bg-gradient-green {
@@ -21,7 +57,7 @@
 }
 
 a.active {
-  text-decoration: underline;
+  font-weight: 500;
 }
 
 .waves {
@@ -64,6 +100,18 @@ a.active {
   white-space: nowrap;
   animation: typewriter 3s steps(24) 1s 1 normal both,
     blinkTextCursor 1000ms steps(24) infinite normal;
+}
+
+.notepad {
+  width: 70px;
+  top: 180px;
+  left: 60px;
+  opacity: 0.1;
+}
+
+.reactions {
+  right: 10px;
+  top: 110px;
 }
 
 /*  animation-name: typewriter;

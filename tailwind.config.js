@@ -5,12 +5,14 @@ module.exports = {
     extend: {
       colors: {
         "neon-purple": "#9d32ef",
+        "neon-yellow": "#F0ED46",
       },
       fontFamily: {
         monocut: ["Cutive Mono"],
         majormono: ["Major Mono Display"],
         monofett: ["Monofett"],
         open: ["Open Sans"],
+        roboto: ["Roboto"],
       },
     },
   },
