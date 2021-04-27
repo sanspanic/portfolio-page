@@ -29,7 +29,7 @@ const Welcome = () => {
                 code.
               </p>
               <br></br>
-              <button className="mx-auto font-open font-bold rounded  px-10 py-3 bg-gradient-green text-white button-shadow">
+              <button className="mx-auto font-open font-bold rounded  px-10 py-3 bg-gradient-purple text-white button-shadow transform duration-300 hover:scale-105">
                 Explore
               </button>
               <br></br>

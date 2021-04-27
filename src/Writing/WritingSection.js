@@ -3,24 +3,34 @@ import Writing from "../SVGs/WomanWriting";
 import Notepad from "../SVGs/Notepad";
 import devAPI from "../API/devAPI";
 import DEVPostCard from "./DEVPostCard";
+import RotatingPencil from "./RotatingPenicl";
+import APIError from "./APIError";
 
 const WritingSection = () => {
+  const [isLoading, setIsLoading] = useState(false);
+  const [error, setError] = useState(false);
   const [articles, setArticles] = useState([]);
+
   useEffect(() => {
     const getPosts = async () => {
       try {
+        setError(false);
+        setIsLoading(true);
         const res = await devAPI.getArticles();
         console.log(res);
         setArticles(res);
+        setIsLoading(false);
       } catch (e) {
+        setError(true);
         console.log(e);
+        setIsLoading(false);
       }
     };
     getPosts();
   }, []);
 
   return (
-    <div className="flex-grow font-monocut px-5 sm:px-3 relative">
+    <div className="flex-grow font-monocut px-5 sm:px-3 relative mb-20">
       <h1 className="font-roboto font-bold text-2xl text-center py-10">
         Writing.
       </h1>
@@ -39,7 +49,9 @@ const WritingSection = () => {
         might find it useful.
       </p>
       <Writing className="mx-auto -mt-10 sm:w-4/12 bg-faded-white rounded-full" />
-      <div class="container px-5 mx-auto mb-20 w-9/12 border-t border-black">
+      <div className="container px-5 mx-auto mb-20 sm:w-9/12 pt-16 border-t border-black">
+        {isLoading ? <RotatingPencil /> : null}
+        {error ? <APIError /> : null}
         {articles.map((a) => (
           <DEVPostCard
             reactions={a.positive_reactions_count}

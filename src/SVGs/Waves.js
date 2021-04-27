@@ -3,7 +3,7 @@ import * as React from "react";
 function SvgComponent(props) {
   return (
     <svg
-      className="waves -mb-1 -mt-20"
+      className="reverse -mb-1 -mt-20"
       viewBox="0 0 883 200"
       xmlns="http://www.w3.org/2000/svg"
       {...props}

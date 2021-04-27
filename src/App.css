@@ -21,7 +21,7 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.bg-gradient-purple {
+.bg-gradient-lightpurple {
   background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
 }
 
@@ -58,7 +58,7 @@ body {
   background-image: url("./Assets/alchemy.gif");
 }
 
-.bg-gradient-green {
+.bg-gradient-purple {
   background: #da22ff; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
@@ -76,7 +76,11 @@ a.active {
   font-weight: 500;
 }
 
-.waves {
+.linear {
+  top: 60%;
+}
+
+.reverse {
   transform: rotate(180deg);
 }
 
@@ -101,11 +105,8 @@ a.active {
 }
 
 .button-shadow:hover {
-  font-size: 1.2rem;
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
     rgba(0, 0, 0, 0.22) 0px 15px 12px;
-  transition-property: all;
-  transition-duration: 500ms;
 }
 .typewriter-text {
   overflow: hidden;
