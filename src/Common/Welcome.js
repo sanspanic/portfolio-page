@@ -12,8 +12,9 @@ const Welcome = () => {
           <WomanServer />
           <div className="sm:py-5 mr-5">
             <div className="border-l-4 border-neon-purple pl-10">
-              <p className="bg-faded-white rounded-full">
-                I am a full-stack software engineer.
+              <p className="bg-faded-white rounded-full max-w-prose">
+                I am a versatile software engineer who enjoys working across the
+                entire stack.
               </p>
               <br></br>
               <p className="max-w-prose bg-faded-white rounded-full">

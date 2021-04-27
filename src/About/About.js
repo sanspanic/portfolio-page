@@ -1,5 +1,6 @@
 import React from "react";
 import Timeline from "./Timeline";
+import CodingBulletPoints from "./CodingBulletPoints";
 
 const About = () => {
   return (
@@ -8,6 +9,7 @@ const About = () => {
         {" "}
         Who am I?
       </h1>
+      <CodingBulletPoints />
       <Timeline />
     </div>
   );
