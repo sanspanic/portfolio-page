@@ -1,11 +1,12 @@
 import React from "react";
 import WomanSchool from "../SVGs/WomanSchool";
 import WomanDirections from "../SVGs/WomanDirections";
+import { Briefcase, Target } from "phosphor-react";
 
 const Timeline = () => {
   return (
     <section className="text-gray-600 body-font">
-      <div className="container px-5 py-24 mx-auto">
+      <div className="container px-5 pt-20 pb-40 sm:pb-20 mx-auto">
         <div className="flex flex-col md:flex-row w-full">
           <div className="lg:w-3/5 md:w-1/2 md:pr-10 md:py-6">
             <div className="flex relative pb-12">
@@ -13,7 +14,7 @@ const Timeline = () => {
                 <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
               </div>
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-neon-purple inline-flex items-center justify-center text-white relative z-10">
-                <svg
+                {/*                 <svg
                   fill="none"
                   stroke="currentColor"
                   stroke-linecap="round"
@@ -23,7 +24,8 @@ const Timeline = () => {
                   viewBox="0 0 24 24"
                 >
                   <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                </svg>
+                </svg> */}
+                <Briefcase size={24} />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">
@@ -129,7 +131,7 @@ const Timeline = () => {
             </div> */}
             <div className="flex relative">
               <div className="flex-shrink-0 w-10 h-10 rounded-full bg-neon-purple inline-flex items-center justify-center text-white relative z-10">
-                <svg
+                {/*                 <svg
                   fill="none"
                   stroke="currentColor"
                   stroke-linecap="round"
@@ -140,7 +142,8 @@ const Timeline = () => {
                 >
                   <path d="M22 11.08V12a10 10 0 11-5.93-9.14"></path>
                   <path d="M22 4L12 14.01l-3-3"></path>
-                </svg>
+                </svg> */}
+                <Target size={24} />
               </div>
               <div className="flex-grow pl-4">
                 <h2 className="font-medium title-font text-sm text-gray-900 mb-1 tracking-wider">

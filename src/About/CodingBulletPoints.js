@@ -9,17 +9,15 @@ import {
 const CodingBulletPoints = () => {
   return (
     <div className="max-w-prose mx-auto">
-      <p className="bg-faded-white rounded-full">
+      <p className="bg-faded-white rounded-full mb-20">
         I discovered coding a bit later in life than most. Despite this, I find
         it's{" "}
         <span className="highlight font-open font-bold">a perfect match</span>{" "}
-        for me, because it allows me to act out 4 drivers I've always
-        experienced as motivating, and found myself to be especially good at,
-        namely:
+        for me, because it allows me to act out 4 drives I've always experienced
+        as motivating, and found myself to be especially good at, namely:
       </p>
-      <br></br>
-      <div className="mx-auto w-7/12 bg-faded-white p-4 fancy-border mt-5">
-        <ul className="text-xl font-roboto tracking-widest font-bold leading-loose">
+      <div className="mx-auto sm:w-9/12 md:w-7/12 bg-faded-white p-4 fancy-border mt-5">
+        <ul className="text-lg sm:text-xl font-roboto tracking-widest font-bold leading-loose">
           <li className="flex items-center">
             <span className="col-span-1">
               <MagnifyingGlass className="text-neon-purple inline" size={27} />
@@ -35,8 +33,8 @@ const CodingBulletPoints = () => {
             <span> Striving for efficiency</span>
           </li>
           <li className="flex items-center">
-            <GraduationCap size={27} className="text-neon-purple inline" />
-             <span> Continuous learning</span>
+            <GraduationCap size={27} className="text-neon-purple inline" /> 
+            <span> Continuous learning</span>
           </li>
         </ul>
       </div>
