@@ -6,6 +6,7 @@ module.exports = {
       colors: {
         "neon-purple": "#9d32ef",
         "neon-yellow": "#F0ED46",
+        "faded-white": "#fdfdfc",
       },
       fontFamily: {
         monocut: ["Cutive Mono"],

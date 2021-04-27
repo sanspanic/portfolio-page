@@ -4,7 +4,7 @@ import WomanServer from "../SVGs/WomanServer";
 const Welcome = () => {
   return (
     <div className="flex-grow flex flex-col my-10 mx-5">
-      <h1 className="font-majormono text-2xl typewriter-text mb-10">
+      <h1 className="font-majormono text-2xl typewriter-text mb-10 bg-faded-white py-1">
         hello, my nAme is sAndy.
       </h1>
       <div className="">
@@ -12,14 +12,16 @@ const Welcome = () => {
           <WomanServer />
           <div className="sm:py-5 mr-5">
             <div className="border-l-4 border-neon-purple pl-10">
-              <p>I am a full-stack software engineer.</p>
+              <p className="bg-faded-white rounded-full">
+                I am a full-stack software engineer.
+              </p>
               <br></br>
-              <p className="max-w-prose">
+              <p className="max-w-prose bg-faded-white rounded-full">
                 I love writing code, and I love writing words. Occassionally, I
                 write words about writing code.
               </p>
               <br></br>
-              <p className="max-w-prose">
+              <p className="max-w-prose bg-faded-white rounded-full">
                 I firmly believe that tech can and should be a{" "}
                 <b className="font-open highlight">force for good</b>, and it is
                 this creative and transformative potential that motivates me to

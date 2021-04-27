@@ -7,16 +7,17 @@
 }
 
 .bg-gradient-navbar {
-  background: #ffb75e; /* fallback for old browsers */
+  /*   background: conic-gradient(at bottom left, deeppink, cyan); */
+  background: #ffe259; /* fallback for old browsers */
   background: -webkit-linear-gradient(
     to right,
-    #f9ff00,
-    #ffb75e
+    #ffa751,
+    #ffe259
   ); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(
     to right,
-    #f9ff00,
-    #ffb75e
+    #ffa751,
+    #ffe259
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
@@ -40,6 +41,7 @@ body {
   /*   background-color: #f1fbe2;
  */
   background-color: #e6f5f9;
+  background-image: url("./Assets/alchemy.gif");
 }
 
 .bg-gradient-green {

@@ -3,7 +3,7 @@ import React from "react";
 function SvgComponent(props) {
   return (
     <svg
-      className="-mt-7 sm:mt-0 sm:w-6/12 lg:w-3/12"
+      className="-mt-7 sm:mt-0 sm:w-6/12 lg:w-3/12 bg-faded-white rounded-full"
       id="prefix__Vector"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 1200"

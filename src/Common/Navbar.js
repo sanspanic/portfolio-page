@@ -14,7 +14,7 @@ const Navbar = () => {
           src={Logo}
         ></img>
       </ul>
-      <ul className="flex text-white justify-evenly sm:text-base text-sm">
+      <ul className="flex text-black justify-evenly sm:text-base text-sm">
         <NavLink className="px-3 " exact to="/">
           Welcome
         </NavLink>

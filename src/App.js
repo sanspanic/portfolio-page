@@ -8,7 +8,7 @@ import Routes from "./Common/Routes";
 
 function App() {
   return (
-    <div className="content-wrapper">
+    <div className="content-wrapper bg-white bg-opacity-80">
       {/*       <h1 className="font-monocut text-2xl">Hello, my name is Sandy.</h1>
       <h1 className="font-monofett text-2xl">Hello, my name is Sandy.</h1>
       <h1 className="font-open text-2xl">Hello, my name is Sandy.</h1> */}
