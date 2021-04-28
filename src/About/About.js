@@ -4,7 +4,7 @@ import CodingBulletPoints from "./CodingBulletPoints";
 
 const About = () => {
   return (
-    <div className="flex-grow font-monocut px-5 sm:px-3 ">
+    <div className="flex-grow font-monocut px-5 sm:px-3 mb-60">
       <h1 className="text-2xl font-roboto font-bold text-center py-10">
         {" "}
         Who am I?

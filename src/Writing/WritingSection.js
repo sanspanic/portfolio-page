@@ -30,7 +30,7 @@ const WritingSection = () => {
   }, []);
 
   return (
-    <div className="flex-grow font-monocut px-5 sm:px-3 relative mb-20">
+    <div className="flex-grow font-monocut px-5 sm:px-3 relative mb-60">
       <h1 className="font-roboto font-bold text-2xl text-center py-10">
         Writing.
       </h1>

@@ -25,6 +25,53 @@
   background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
 }
 
+.custom-shape-divider-bottom-1619603492 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1619603492 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 235px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1619603492 .shape-fill {
+  fill: #9d32ef;
+}
+
+.custom-shape-divider-bottom-1619602937 {
+  position: absolute;
+  bottom: 43px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1619602937 svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 232px;
+}
+
+.custom-shape-divider-bottom-1619602937 .shape-fill {
+  fill: #9d32ef;
+}
+
+.project-container {
+  background-image: url("./SVGs/Linear.js");
+}
+
 .fancy-border {
   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
     rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px,

@@ -8,6 +8,7 @@ module.exports = {
         "neon-yellow": "#F0ED46",
         "faded-white": "#fdfdfc",
         "pastel-orange": "#fff0de",
+        "mockup-gray": "#f5f5f5",
       },
       fontFamily: {
         monocut: ["Cutive Mono"],
