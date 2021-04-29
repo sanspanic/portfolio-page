@@ -39,6 +39,10 @@
   background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
 }
 
+.carousel button:focus {
+  outline-color: #00f0b5;
+}
+
 .mockup-image {
   padding-top: 100%;
   width: 100%;

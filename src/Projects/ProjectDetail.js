@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Postgres from "../SVGs/Stack/Postgres";
 import Python from "../SVGs/Stack/Python";
 import JavaScript from "../SVGs/Stack/JavaScript";
@@ -10,6 +10,7 @@ import Jest from "../SVGs/Stack/Jest";
 import Bootstrap from "../SVGs/Stack/Bootstrap";
 import Express from "../SVGs/Stack/Express";
 import { motion } from "framer-motion";
+import { ArrowSquareLeft, ArrowSquareRight } from "phosphor-react";
 
 const ProjectDetail = ({
   title,
@@ -20,18 +21,73 @@ const ProjectDetail = ({
   github,
   live,
   demo,
+  setCurrProjectIndex,
+  currProjectIndex,
 }) => {
+  const [clickedX, setClickedX] = useState(0);
+  const [clickedXLeft, setClickedXLeft] = useState(0);
+  const [clickedOpacity, setClickedOpacity] = useState(1);
+  const [rotation, setRotation] = useState(0);
+
+  const handleNext = () => {
+    setClickedOpacity(0);
+    setTimeout(() => {
+      if (currProjectIndex === 3) {
+        setCurrProjectIndex(0);
+        setClickedOpacity(1);
+      } else {
+        setCurrProjectIndex((i) => i + 1);
+        setClickedOpacity(1);
+      }
+    }, [500]);
+  };
+
+  const handlePrevious = () => {
+    setClickedOpacity(0);
+    setTimeout(() => {
+      if (currProjectIndex === 0) {
+        setCurrProjectIndex(3);
+        setClickedOpacity(1);
+      } else {
+        setCurrProjectIndex((i) => i - 1);
+        setClickedOpacity(1);
+      }
+    }, [500]);
+  };
+
+  const projectVariants = {
+    appear: {
+      opacity: [0, 1],
+      scale: [0, 1],
+      transition: { duration: 0.5 },
+    },
+  };
+
   return (
     <>
       <div className="relative h-screen flex items-center mt-20 sm:mt-0">
-        <div className="sm:-mt-60 mx-auto lg:w-9/12">
-          <h2 className="font-monofett tracking-widest font-bold text-4xl sm:text-5xl lg:text-6xl text-center mb-10 sm:my-10">
-            {title}
-          </h2>
+        <div className="sm:-mt-60 mx-auto w-11/12 lg:w-9/12">
+          <div className="flex justify-between items-start sm:items-center mx-auto carousel">
+            <motion.button onClick={handlePrevious}>
+              <ArrowSquareLeft size={48} />
+            </motion.button>
+            <h2 className="inline font-monofett tracking-widest font-bold text-4xl sm:text-5xl lg:text-6xl text-center mb-10 sm:my-10">
+              {title}
+            </h2>
+            <button onClick={handleNext}>
+              <ArrowSquareRight size={48} />
+            </button>
+          </div>
 
-          <div className="flex flex-col sm:flex-row items-center fancy-border bg-faded-white">
+          <motion.div
+            animate={{
+              opacity: [1, clickedOpacity, 1],
+              transition: { duration: 0.7 },
+            }}
+            className="flex flex-col sm:flex-row items-center fancy-border bg-faded-white"
+          >
             {" "}
-            <div className="w-9/12 sm:w-4/12">
+            <div className="w-9/12 sm:w-4/12 pt-5 sm:pt-0">
               <img alt="project mockup" className="mockup-img" src={src}></img>
             </div>
             <div className="sm:w-7/12">
@@ -63,27 +119,24 @@ const ProjectDetail = ({
               </div>
               <div className="flex justify-center items-center pt-6 pb-2 text-sm sm:text-base links">
                 <motion.span
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
+                  variants={projectVariants}
+                  animate="appear"
                   whileHover={{ rotate: 2 }}
                   className="border border-black font-monocut py-1 px-3 highlight"
                 >
                   <a href={github}>Github</a>
                 </motion.span>
                 <motion.span
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
+                  variants={projectVariants}
+                  animate="appear"
                   whileHover={{ rotate: 2 }}
                   className="border border-black font-monocut py-1 px-3 highlight ml-4"
                 >
                   <a href={live}>Live Page</a>
                 </motion.span>
                 <motion.span
-                  initial={{ opacity: 0, scale: 0 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5 }}
+                  variants={projectVariants}
+                  animate="appear"
                   whileHover={{ rotate: 2 }}
                   className="border border-black font-monocut py-1 px-3 highlight ml-4"
                 >
@@ -100,10 +153,10 @@ const ProjectDetail = ({
                 </p>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
         {/* put title of whichever project comes last here to prevent double clouds */}
-        {title != "TRACK" && (
+        {/*         {title != "TRACK" && (
           <div class="hidden sm:block custom-shape-divider-bottom-project">
             <svg
               data-name="Layer 1"
@@ -127,7 +180,7 @@ const ProjectDetail = ({
               ></path>
             </svg>
           </div>
-        )}
+        )} */}
         <div class="hidden sm:block custom-shape-divider-bottom-1619603492">
           <svg
             data-name="Layer 1"

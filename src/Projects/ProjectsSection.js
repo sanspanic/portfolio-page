@@ -11,6 +11,7 @@ import JobMockup from "../Assets/Mockup_v2/job.png";
 import GeoMockup from "../Assets/Mockup_v2/geo.png";
 
 const ProjectsSection = () => {
+  const [currProjectIndex, setCurrProjectIndex] = useState(0);
   const [projects, setProjects] = useState([
     {
       title: "GET A JOB",
@@ -81,7 +82,7 @@ const ProjectsSection = () => {
   return (
     <>
       <div className="flex-grow pb-60 sm:pb-0">
-        {projects.map((p) => (
+        {/*         {projects.map((p) => (
           <div className="h-screen relative project-container">
             <ProjectDetail
               title={p.title}
@@ -94,7 +95,21 @@ const ProjectsSection = () => {
               demo={p.demo}
             />
           </div>
-        ))}
+        ))} */}
+        <div className="h-screen relative project-container">
+          <ProjectDetail
+            title={projects[currProjectIndex].title}
+            description1={projects[currProjectIndex].description1}
+            description2={projects[currProjectIndex].description2}
+            src={projects[currProjectIndex].src}
+            stack={projects[currProjectIndex].stack}
+            github={projects[currProjectIndex].github}
+            live={projects[currProjectIndex].live}
+            demo={projects[currProjectIndex].demo}
+            setCurrProjectIndex={setCurrProjectIndex}
+            currProjectIndex={currProjectIndex}
+          />
+        </div>
       </div>
     </>
   );

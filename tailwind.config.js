@@ -7,6 +7,7 @@ module.exports = {
         "neon-purple": "#9d32ef",
         "neon-yellow": "#F0ED46",
         "faded-white": "#fdfdfc",
+        "neon-green": "#00f0b5",
         "pastel-orange": "#fff0de",
         "mockup-gray": "#f5f5f5",
       },

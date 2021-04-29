@@ -3,7 +3,7 @@ import { ThumbsUp } from "phosphor-react";
 
 const DEVPostCard = ({ src, title, date, reactions, description, url }) => {
   return (
-    <div className="py-4 sm:py-8 flex flex-wrap md:flex-nowrap bg-faded-white px-3 my-7 fancy-border bg-pastel-orange transform duration-300 hover:translate-x-2 ">
+    <div className="py-4 sm:py-8 flex flex-wrap md:flex-nowrap bg-faded-white px-3 my-7 fancy-border  transform duration-300 hover:translate-x-2 ">
       <div className="w-64 md:w-64 md:mb-0 mb-6 mr-5 flex-shrink-0 flex flex-col relative">
         <span className="mt-1 text-gray-500 text-sm">{date.slice(0, 10)}</span>
         <img
@@ -11,7 +11,7 @@ const DEVPostCard = ({ src, title, date, reactions, description, url }) => {
           alt="article cover img"
           src={src}
         ></img>
-        <div className="bg-white rounded-xl absolute reactions p-1">
+        <div className="bg-faded-white rounded-xl absolute reactions p-1">
           {reactions} <ThumbsUp className="inline " size={28} />
         </div>
       </div>
