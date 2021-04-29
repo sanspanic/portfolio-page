@@ -21,9 +21,30 @@
   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
+.bg-gradient-navbar {
+  /*   background: conic-gradient(at bottom left, deeppink, cyan); */
+  background: #f0ed46; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #00f0b5 #9d32ef
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #00f0b5,
+    #9d32ef
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .bg-gradient-lightpurple {
   background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
 }
+
+.mockup-image {
+  padding-top: 100%;
+  width: 100%;
+}
+
+/* start footer shape */
 
 .custom-shape-divider-bottom-1619603492 {
   position: absolute;
@@ -47,6 +68,9 @@
   fill: #9d32ef;
 }
 
+/* end footer shape */
+/* start project divider shape */
+
 .custom-shape-divider-bottom-1619602937 {
   position: absolute;
   bottom: 43px;
@@ -67,10 +91,35 @@
 .custom-shape-divider-bottom-1619602937 .shape-fill {
   fill: #9d32ef;
 }
+/* end project divider shape */
+/* START shapes which are ONLY inside the projects detail component */
 
-.project-container {
-  background-image: url("./SVGs/Linear.js");
+.custom-shape-divider-bottom-project .shape-fill {
+  fill: #9d32ef;
 }
+
+.custom-shape-divider-bottom-project {
+  position: absolute;
+  bottom: 23px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-project svg {
+  position: relative;
+  display: block;
+  width: calc(111% + 1.3px);
+  height: 232px;
+}
+
+.custom-shape-divider-bottom-project .shape-fill {
+  fill: #9d32ef;
+}
+
+/* END shapes which are ONLY inside the projects detail component */
 
 .fancy-border {
   box-shadow: rgba(240, 46, 170, 0.4) -5px 5px,
@@ -96,6 +145,10 @@
   padding-bottom: 5px;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.links span:hover {
+  border: 2px solid black;
 }
 
 body {

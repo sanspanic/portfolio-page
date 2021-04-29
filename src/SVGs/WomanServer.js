@@ -1,9 +1,19 @@
+import { motion } from "framer-motion";
 import React from "react";
 
 function SvgComponent(props) {
+  const imgVariants = {
+    float: {
+      scale: 1,
+      y: 20,
+      transition: {
+        yoyo: Infinity,
+        duration: 1.8,
+      },
+    },
+  };
   return (
     <svg
-      className="-mt-7 sm:mt-0 sm:w-6/12 lg:w-3/12 bg-faded-white rounded-full"
       id="prefix__Vector"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 1200 1200"
@@ -79,7 +89,9 @@ function SvgComponent(props) {
         className="prefix__cls-5"
         d="M720.29 681.31l-21.16 75.64h37.09l20.54-75.64h-36.47z"
       />
-      <path
+      <motion.path
+        variants={imgVariants}
+        animate="float"
         className="prefix__cls-1"
         d="M750.19 322.09a44.73 44.73 0 00-47.45-73.68 62 62 0 00-109 9.67 44.73 44.73 0 00-55.41 64z"
       />

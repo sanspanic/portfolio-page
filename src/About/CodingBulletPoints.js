@@ -5,6 +5,7 @@ import {
   Lightbulb,
   RocketLaunch,
 } from "phosphor-react";
+import { motion } from "framer-motion";
 
 const CodingBulletPoints = () => {
   return (
@@ -16,7 +17,12 @@ const CodingBulletPoints = () => {
         for me, because it allows me to act out 4 drives I've always experienced
         as motivating, and found myself to be especially good at, namely:
       </p>
-      <div className="mx-auto sm:w-9/12 md:w-7/12 bg-faded-white p-4 fancy-border mt-5 bg-pastel-orange">
+      <motion.div
+        initial={{ opacity: 0, scale: 0 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 0.5 }}
+        className="mx-auto sm:w-9/12 md:w-7/12 bg-faded-white p-4 fancy-border mt-5 bg-pastel-orange"
+      >
         <ul className="text-lg sm:text-xl font-roboto tracking-widest font-bold leading-loose">
           <li className="flex items-center">
             <span className="col-span-1">
@@ -37,7 +43,7 @@ const CodingBulletPoints = () => {
              <span> Continuous learning</span>
           </li>
         </ul>
-      </div>
+      </motion.div>
     </div>
   );
 };

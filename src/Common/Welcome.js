@@ -1,15 +1,26 @@
 import React from "react";
 import WomanServer from "../SVGs/WomanServer";
+import Tailwind from "../SVGs/Stack/Tailwind";
+import Bootstrap from "../SVGs/Stack/Bootstrap";
+import Javascript from "../SVGs/Stack/JavaScript";
+import Python from "../SVGs/Stack/Python";
+import ReactSVG from "../SVGs/Stack/React";
+import Jest from "../SVGs/Stack/Jest";
+import Postgres from "../SVGs/Stack/Postgres";
+import Flask from "../SVGs/Stack/Flask";
+import Express from "../SVGs/Stack/Express";
+import Node from "../SVGs/Stack/Node";
+import { motion } from "framer-motion";
 
 const Welcome = () => {
   return (
-    <div className="flex-grow flex flex-col my-10 mx-5">
+    <div className="flex-grow flex flex-col mt-10 mb-40 sm:my-10 mx-5">
       <h1 className="font-majormono text-2xl typewriter-text mb-10 bg-faded-white py-1">
         hello, my nAme is sAndy.
       </h1>
       <div className="">
         <div className="flex flex-col-reverse sm:flex-row font-monocut justify-around items-center font-monocut">
-          <WomanServer />
+          <WomanServer className="sm:w-6/12 lg:w-3/12 bg-faded-white rounded-full my-20 sm:my-0" />
           <div className="sm:py-5 mr-5">
             <div className="border-l-4 border-neon-purple pl-10">
               <p className="bg-faded-white rounded-full max-w-prose">
@@ -29,16 +40,24 @@ const Welcome = () => {
                 code.
               </p>
               <br></br>
-              <button className="mx-auto font-open font-bold rounded  px-10 py-3 bg-gradient-purple text-white button-shadow transform duration-300 hover:scale-105">
-                Explore
-              </button>
+              <motion.div
+                initial={{ opacity: 0, scale: 0 }}
+                animate={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.5 }}
+                className="w-7/12 sm:w-full mx-auto grid grid-cols-5 sm:grid-cols-10 gap-3 sm:gap-4 z-50"
+              >
+                <Python className="" /> <Javascript className="" />{" "}
+                <Node className="" />
+                <ReactSVG className="" /> <Postgres className="" />{" "}
+                <Jest className="" /> <Flask className="" />{" "}
+                <Express className="" />
+                <Tailwind className="" /> <Bootstrap className="" />
+              </motion.div>
               <br></br>
             </div>
           </div>
         </div>
       </div>
-
-      {/*       <IceCream width="100" /> */}
     </div>
   );
 };

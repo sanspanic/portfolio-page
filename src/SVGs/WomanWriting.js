@@ -1,6 +1,17 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function SvgComponent(props) {
+  const imgVariants = {
+    float: {
+      scale: 1,
+      x: [20, -20],
+      transition: {
+        yoyo: Infinity,
+        duration: 1.8,
+      },
+    },
+  };
   return (
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1200" {...props}>
       <defs>
@@ -35,12 +46,15 @@ function SvgComponent(props) {
         />
       </g>
       <g id="prefix__Vector">
-        <path
+        <motion.path
+          variants={imgVariants}
+          animate="float"
           d="M284.8 695.1v308.4h717V695.1zm269.54 170.36l22.22-37.29 17.08 10.1-5.14 9 39.85 58.22zm196.34-44.93l-19.33-38.86 17.73-8.9 4.79 9.19 70.52-2z"
           fill="#f3f3f3"
         />
         <g id="prefix__Layer_3" data-name="Layer 3">
           <path
+            fill="#F0ED46"
             className="prefix__cls-6"
             d="M430.41 581.67c-8.28 5.16-24.5 9.56-57.61 10.63-34.38 0-62.6-33-62.6-76-1-93.7 96.4-111.5 150.6-216.1 24.9-48.1 55.1-46.9 62.7-46.5 16.6.9 40.2 14 40.2 36.9a27.44 27.44 0 01-9.56 21.19M535.56 359.54c-3.58 8.43-11 22.58-13.43 38.81"
           />
@@ -87,6 +101,8 @@ function SvgComponent(props) {
           fill="none"
         />
         <path
+          fill="#F0ED46"
+          stroke="#F0ED46"
           className="prefix__cls-12"
           d="M363.3 814.8L318.5 770l44.8-44.8M919.2 974.8L964 930l-44.8-44.8"
         />
