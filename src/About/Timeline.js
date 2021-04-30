@@ -1,6 +1,5 @@
 import React from "react";
 import WomanSchool from "../SVGs/WomanSchool";
-import WomanDirections from "../SVGs/WomanDirections";
 import { Briefcase, Target } from "phosphor-react";
 
 const Timeline = () => {
@@ -38,9 +37,9 @@ const Timeline = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -68,9 +67,9 @@ const Timeline = () => {
                 <svg
                   fill="none"
                   stroke="currentColor"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
                   className="w-5 h-5"
                   viewBox="0 0 24 24"
                 >
@@ -111,13 +110,7 @@ const Timeline = () => {
           </div>
           <div className="lg:w-2/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12">
             <WomanSchool className="bg-faded-white rounded-full" />
-            {/*             <WomanDirections /> */}
           </div>
-          {/*           <img
-            className="lg:w-3/5 md:w-1/2 object-cover object-center rounded-lg md:mt-0 mt-12"
-            src="https://dummyimage.com/1200x500"
-            alt="step"
-          /> */}
         </div>
       </div>
     </section>

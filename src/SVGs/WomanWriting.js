@@ -7,7 +7,8 @@ function SvgComponent(props) {
       rotate: 180,
       scale: 1,
       transition: {
-        yoyo: Infinity,
+        repeat: Infinity,
+        repeatType: "reverse",
         duration: 4,
       },
     },

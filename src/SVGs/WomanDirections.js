@@ -10,7 +10,7 @@ function SvgComponent(props) {
       <defs>
         <style>
           {
-            ".prefix__cls-1{fill:#f2f2f2}.prefix__cls-2{fill:#a4a4a4}.prefix__cls-3{fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#000;stroke-width:2.5px}.prefix__cls-5{fill:#e0e0e0}"
+            ".prefix__cls-1{fill:#f2f2f2}.prefix__cls-2{fill:#a4a4a4}.prefix__cls-3{fill:none;strokeLinecap:round;strokeLinejoin:round;stroke:#000;stroke-width:2.5px}.prefix__cls-5{fill:#e0e0e0}"
           }
         </style>
       </defs>

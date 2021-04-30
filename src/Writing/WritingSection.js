@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Writing from "../SVGs/WomanWriting";
-import Notepad from "../SVGs/Notepad";
 import devAPI from "../API/devAPI";
 import DEVPostCard from "./DEVPostCard";
 import RotatingPencil from "./RotatingPenicl";
@@ -18,7 +17,6 @@ const WritingSection = () => {
         setError(false);
         setIsLoading(true);
         const res = await devAPI.getArticles();
-        console.log(res);
         setArticles(res);
         setIsLoading(false);
       } catch (e) {
@@ -54,8 +52,9 @@ const WritingSection = () => {
         <div className="container px-5 mx-auto mb-20 sm:w-9/12 pt-16 border-t border-black">
           {isLoading ? <RotatingPencil /> : null}
           {error ? <APIError /> : null}
-          {articles.map((a) => (
+          {articles.map((a, i) => (
             <DEVPostCard
+              key={i}
               reactions={a.positive_reactions_count}
               src={a.cover_image}
               title={a.title}

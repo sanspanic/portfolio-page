@@ -1,12 +1,43 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Logo from "../Assets/croppedLogo.png";
-/* import Logo from "../Assets/logo_cropped_white.png"; */
 import { NavLink } from "react-router-dom";
 import { motion, useViewportScroll, useTransform } from "framer-motion";
 
 const Navbar = () => {
   const { scrollYProgress } = useViewportScroll();
   const width = useTransform(scrollYProgress, [0, 1], ["0px", "100%"]);
+
+  console.log("Are you...checking for errors? ");
+  console.log("Rude.");
+  console.log(`────────▓▓▓▓▓▓▓────────────▒▒▒▒▒▒
+  ──────▓▓▒▒▒▒▒▒▒▓▓────────▒▒░░░░░░▒▒
+  ────▓▓▒▒▒▒▒▒▒▒▒▒▒▓▓────▒▒░░░░░░░░░▒▒▒
+  ───▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▓▓▒▒░░░░░░░░░░░░░░▒
+  ──▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░▒
+  ──▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░▒
+  ─▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░░▒
+  ▓▓▒▒▒▒▒▒░░░░░░░░░░░▒▒░░▒▒▒▒▒▒▒▒▒▒▒░░░░░░▒
+  ▓▓▒▒▒▒▒▒▀▀▀▀▀███▄▄▒▒▒░░░▄▄▄██▀▀▀▀▀░░░░░░▒
+  ▓▓▒▒▒▒▒▒▒▄▀████▀███▄▒░▄████▀████▄░░░░░░░▒
+  ▓▓▒▒▒▒▒▒█──▀█████▀─▌▒░▐──▀█████▀─█░░░░░░▒
+  ▓▓▒▒▒▒▒▒▒▀▄▄▄▄▄▄▄▄▀▒▒░░▀▄▄▄▄▄▄▄▄▀░░░░░░░▒
+  ─▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░░▒
+  ──▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░░░░▒
+  ───▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒▀▀▀░░░░░░░░░░░░░░▒
+  ────▓▓▒▒▒▒▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░░░░░▒▒
+  ─────▓▓▒▒▒▒▒▒▒▒▒▒▄▄▄▄▄▄▄▄▄░░░░░░░░▒▒
+  ──────▓▓▒▒▒▒▒▒▒▄▀▀▀▀▀▀▀▀▀▀▀▄░░░░░▒▒
+  ───────▓▓▒▒▒▒▒▀▒▒▒▒▒▒░░░░░░░▀░░░▒▒
+  ────────▓▓▒▒▒▒▒▒▒▒▒▒▒░░░░░░░░░░▒▒
+  ──────────▓▓▒▒▒▒▒▒▒▒▒░░░░░░░░▒▒
+  ───────────▓▓▒▒▒▒▒▒▒▒░░░░░░░▒▒
+  ─────────────▓▓▒▒▒▒▒▒░░░░░▒▒
+  ───────────────▓▓▒▒▒▒░░░░▒▒
+  ────────────────▓▓▒▒▒░░░▒▒
+  ──────────────────▓▓▒░▒▒
+  ───────────────────▓▒░▒
+  ────────────────────▓▒
+  `);
 
   return (
     <>
@@ -38,8 +69,6 @@ const Navbar = () => {
         style={{ width }}
         className="h-2 bg-gradient-navbar sticky top-0 z-50 overflow-hidden font-monocut text-right"
       >
-        {console.log("width:", width)}
-
         <span className="py-2text-sm tracking-widest"></span>
       </motion.div>
     </>

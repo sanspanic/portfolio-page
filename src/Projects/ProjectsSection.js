@@ -1,19 +1,14 @@
 import React, { useState } from "react";
-import Linear from "../SVGs/Linear";
 import ProjectDetail from "./ProjectDetail";
-//import TrackMockup from "../Assets/Mockups/track_mockup_watermarked.jpg";
 import TrackMockup from "../Assets/Mockup_v2/track.png";
-//import UnicornMockup from "../Assets/Mockups/unicorn_mockup_2_watermarked.jpg";
 import UnicornMockup from "../Assets/Mockup_v2/unicorn.png";
-//import JobMockup from "../Assets/Mockups/get-a-job-mockup-watermarked.jpg";
 import JobMockup from "../Assets/Mockup_v2/job.png";
-//import GeoMockup from "../Assets/Mockups/geo-challenge-mockup.jpg";
 import GeoMockup from "../Assets/Mockup_v2/geo.png";
 import Footer from "../Common/Footer";
 
 const ProjectsSection = () => {
   const [currProjectIndex, setCurrProjectIndex] = useState(0);
-  const [projects, setProjects] = useState([
+  const [projects] = useState([
     {
       title: "GET A JOB",
       src: JobMockup,
@@ -83,20 +78,6 @@ const ProjectsSection = () => {
   return (
     <>
       <div className="flex-grow pb-60 sm:pb-0">
-        {/*         {projects.map((p) => (
-          <div className="h-screen relative project-container">
-            <ProjectDetail
-              title={p.title}
-              description1={p.description1}
-              description2={p.description2}
-              src={p.src}
-              stack={p.stack}
-              github={p.github}
-              live={p.live}
-              demo={p.demo}
-            />
-          </div>
-        ))} */}
         <div className="h-screen relative project-container">
           <ProjectDetail
             title={projects[currProjectIndex].title}
