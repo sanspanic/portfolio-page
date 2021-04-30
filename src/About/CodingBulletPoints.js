@@ -14,8 +14,9 @@ const CodingBulletPoints = () => {
         I discovered coding a bit later in life than most. Despite this, I find
         it's{" "}
         <span className="highlight font-open font-bold">a perfect match</span>{" "}
-        for me, because it allows me to act out 4 drives I've always experienced
-        as motivating, and found myself to be especially good at, namely:
+        for me. The way I see it, coding is an activity perfectly suited to my
+        personality which allows me to act out 4 desires I've always felt and
+        brought to all aspects of life, namely:
       </p>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
@@ -31,16 +32,16 @@ const CodingBulletPoints = () => {
              <span className="justify-self-end"> Analytical thinking</span>
           </li>
           <li className="flex items-center">
-            <Lightbulb size={27} className="text-neon-purple inline" />
-             <span> Creative problem-solving</span>
+            <Lightbulb size={27} className="text-neon-purple inline" /> 
+            <span> Creative problem-solving</span>
           </li>
           <li className="flex items-center">
-            <RocketLaunch size={27} className="text-neon-purple inline" />
-             <span> Striving for efficiency</span>
+            <RocketLaunch size={27} className="text-neon-purple inline" /> 
+            <span> Striving for efficiency</span>
           </li>
           <li className="flex items-center">
-            <GraduationCap size={27} className="text-neon-purple inline" />
-             <span> Continuous learning</span>
+            <GraduationCap size={27} className="text-neon-purple inline" /> 
+            <span> Continuous learning</span>
           </li>
         </ul>
       </motion.div>
