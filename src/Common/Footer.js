@@ -87,7 +87,7 @@ const Footer = (props) => {
             <TwitterLogo size={24} />
           </a>
         </ul>
-        <img alt="logo" className="inline w-40" src={Logo}></img>
+        <img alt="logo" className="inline h-8" src={Logo}></img>
       </div>
     </footer>
   );

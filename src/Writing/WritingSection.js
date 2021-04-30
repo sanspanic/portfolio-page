@@ -48,7 +48,7 @@ const WritingSection = () => {
           contributing to the body of literature in the hope someone out there
           might find it useful.
         </p>
-        <Writing className="mx-auto -mt-10 sm:w-4/12 bg-faded-white rounded-full" />
+        <Writing className="mx-auto sm:w-4/12 bg-faded-white rounded-full" />
         <div className="container px-5 mx-auto mb-20 sm:w-9/12 pt-16 border-t border-black">
           {isLoading ? <RotatingPencil /> : null}
           {error ? <APIError /> : null}
