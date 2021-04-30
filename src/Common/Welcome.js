@@ -27,8 +27,7 @@ const Welcome = () => {
               <div className="border-l-4 border-neon-purple pl-10">
                 <p className="bg-faded-white rounded-full max-w-prose">
                   I am a versatile software engineer who enjoys working across
-                  the entire stack. OMG does this actually redeploy on each
-                  push????
+                  the entire stack.
                 </p>
                 <br></br>
                 <p className="max-w-prose bg-faded-white rounded-full">
