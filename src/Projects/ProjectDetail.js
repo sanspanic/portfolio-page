@@ -68,7 +68,7 @@ const ProjectDetail = ({
             <button className="sm:ml-10 md:ml-20" onClick={handlePrevious}>
               <ArrowSquareLeft size={48} />
             </button>
-            <h2 className="inline font-monofett tracking-widest font-bold text-5xl lg:text-6xl text-center mb-10 sm:my-10">
+            <h2 className="inline font-monofett tracking-widest font-bold text-4xl sm:text-5xl lg:text-6xl text-center mb-10 sm:my-10">
               {title}
             </h2>
             <button className="sm:mr-10 md:mr-20" onClick={handleNext}>

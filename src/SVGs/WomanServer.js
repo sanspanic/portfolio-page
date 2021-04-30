@@ -83,17 +83,21 @@ function SvgComponent(props) {
       />
       <path d="M743.08 754.44h70.27v2.51h-70.27z" />
       <path
-        className="prefix__cls-5"
+        stroke="#9d32ef"
+        strokeWidth="2"
+        fill="none"
         d="M714.43 702.26h-49.3V590.85h153.42v111.41h-67.48"
       />
       <path
-        className="prefix__cls-5"
+        stroke="#9d32ef"
+        strokeWidth="2"
+        fill="none"
         d="M720.29 681.31l-21.16 75.64h37.09l20.54-75.64h-36.47z"
       />
       <motion.path
         variants={imgVariants}
         animate="float"
-        className="prefix__cls-1"
+        fill="#F0ED46"
         d="M750.19 322.09a44.73 44.73 0 00-47.45-73.68 62 62 0 00-109 9.67 44.73 44.73 0 00-55.41 64z"
       />
       <path className="prefix__cls-3" d="M639.95 313.62v71.72H419.88v68.15" />

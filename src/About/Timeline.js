@@ -99,11 +99,11 @@ const Timeline = () => {
                 </h2>
                 <p className="leading-relaxed bg-faded-white rounded-full">
                   First and foremost, I want to focus on learning as many
-                  job-relevant skills as I am can in the coming year, to
-                  maximise the value I add to my team. Because my current role
-                  is largely backend-focused, I want to devote any spare time I
-                  might have left to perfecting my frontend skills and
-                  continuing to create beautiful, interactive UIs with React.
+                  job-relevant skills as I can in the coming year, to maximise
+                  the value I add to my team. Because my current role is largely
+                  backend-focused, I want to devote any spare time I might have
+                  to perfecting my frontend skills and continuing to create
+                  beautiful, interactive UIs with React.
                 </p>
               </div>
             </div>
