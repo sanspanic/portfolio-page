@@ -46,14 +46,19 @@ const Welcome = () => {
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
-                  className="w-7/12 sm:w-full mx-auto grid grid-cols-5 sm:grid-cols-10 gap-3 sm:gap-4 z-50"
+                  //className="w-7/12 sm:w-full mx-auto grid grid-cols-5 sm:grid-cols-10 gap-3 sm:gap-4 z-50"
+                  className="flex flex-wrap justify-center z-50"
                 >
-                  <Python className="" /> <Javascript className="" />{" "}
-                  <Node className="" />
-                  <ReactSVG className="" /> <Postgres className="" />{" "}
-                  <Jest className="" /> <Flask className="" />{" "}
-                  <Express className="" />
-                  <Tailwind className="" /> <Bootstrap className="" />
+                  <Python className="w-8 md:w-10 mx-1" />{" "}
+                  <Javascript className="w-8 md:w-10 mx-1" />{" "}
+                  <Node className="w-8 md:w-10 mx-1" />
+                  <ReactSVG className="w-8 md:w-10 mx-1" />{" "}
+                  <Postgres className="w-8 md:w-10 mx-1" />{" "}
+                  <Jest className="w-8 md:w-10 mx-1" />{" "}
+                  <Flask className="w-8 md:w-10 mx-1" />{" "}
+                  <Express className="w-8 md:w-10 mx-1" />
+                  <Tailwind className="w-8 md:w-10 mx-1" />{" "}
+                  <Bootstrap className="w-8 md:w-10 mx-1" />
                 </motion.div>
                 <br></br>
               </div>
