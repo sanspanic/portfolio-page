@@ -21,9 +21,9 @@ const CodingBulletPoints = () => {
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="mx-auto sm:w-9/12 md:w-7/12 bg-faded-white p-4 fancy-border mt-5 bg-pastel-orange"
+        className="mx-auto sm:w-9/12 md:w-7/12 p-4 dev-card fancy-border mt-5"
       >
-        <ul className="text-lg sm:text-xl font-roboto tracking-widest font-bold leading-loose">
+        <ul className="text-lg sm:text-xl  font-roboto tracking-widest font-bold leading-loose">
           <li className="flex items-center">
             <span className="col-span-1">
               <MagnifyingGlass className="text-neon-purple inline" size={27} />

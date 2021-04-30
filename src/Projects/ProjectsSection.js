@@ -9,6 +9,7 @@ import UnicornMockup from "../Assets/Mockup_v2/unicorn.png";
 import JobMockup from "../Assets/Mockup_v2/job.png";
 //import GeoMockup from "../Assets/Mockups/geo-challenge-mockup.jpg";
 import GeoMockup from "../Assets/Mockup_v2/geo.png";
+import Footer from "../Common/Footer";
 
 const ProjectsSection = () => {
   const [currProjectIndex, setCurrProjectIndex] = useState(0);
@@ -26,9 +27,9 @@ const ProjectsSection = () => {
         "tailwind",
       ],
       description1:
-        "A fake job search website which allows users to register, login, browse, filter and fake-apply to jobs.",
+        "A fake job search website which allows users to create a profile, browse, filter and fake-apply to jobs.",
       description2:
-        "Authentication via JWTs with auth middleware implemented from scratch for learning purposes.",
+        "A full-stack application with authentication via JWTs and middleware implemented from scratch for learning purposes.",
       demo: "",
       live: "https://get-a-job.surge.sh/",
       github: "https://github.com/sanspanic/jobly-frontend",
@@ -69,7 +70,7 @@ const ProjectsSection = () => {
       title: "TRACK",
       description1:
         "Timekeeping and invoice generation for international contractors with real-time currency conversion capabilities.",
-      description2: `My first full-stack project, inspired by the desire to keep all freelance timekeeping and invoices in one place. Auth implemented via Flask-session.`,
+      description2: `My first full-stack project, inspired by my desire to keep all my freelance timekeeping and invoices in one place. Auth implemented via Flask-session.`,
       stack: ["python", "flask", "javascript", "bootstrap", "postgres"],
       src: TrackMockup,
       github: "https://github.com/sanspanic/Track",
@@ -111,6 +112,7 @@ const ProjectsSection = () => {
           />
         </div>
       </div>
+      <Footer />
     </>
   );
 };

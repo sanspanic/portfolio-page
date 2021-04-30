@@ -4,11 +4,11 @@ import { motion } from "framer-motion";
 function SvgComponent(props) {
   const imgVariants = {
     float: {
+      rotate: 180,
       scale: 1,
-      x: [20, -20],
       transition: {
         yoyo: Infinity,
-        duration: 1.8,
+        duration: 4,
       },
     },
   };
@@ -34,7 +34,7 @@ function SvgComponent(props) {
         </pattern>
         <style>
           {
-            ".prefix__cls-12,.prefix__cls-6,.prefix__cls-7,.prefix__cls-9{fill:none}.prefix__cls-2{fill:#949494}.prefix__cls-3{fill:url(#prefix__New_Pattern)}.prefix__cls-6,.prefix__cls-9{stroke:#000}.prefix__cls-12,.prefix__cls-6,.prefix__cls-7,.prefix__cls-9{stroke-linecap:round}.prefix__cls-6{stroke-miterlimit:10}.prefix__cls-6,.prefix__cls-9{stroke-width:2.5px}.prefix__cls-7{stroke:#fff}.prefix__cls-12,.prefix__cls-7,.prefix__cls-9{stroke-linejoin:round}.prefix__cls-12,.prefix__cls-7{stroke-width:12.98px}.prefix__cls-12{stroke:#dfdfdf}"
+            ".prefix__cls-12,.prefix__cls-6,.prefix__cls-7,.prefix__cls-9{fill:none}.prefix__cls-2{fill:#949494}.prefix__cls-3{fill:url(#prefix__New_Pattern)}.prefix__cls-6,.prefix__cls-9{stroke:#000}.prefix__cls-12,.prefix__cls-6,.prefix__cls-7,.prefix__cls-9{stroke-linecap:round}.prefix__cls-6{stroke-miterlimit:10}.prefix__cls-6,.prefix__cls-9{stroke-width:2.5px}.prefix__cls-7{stroke:#fff}.prefix__cls-12,.prefix__cls-7,.prefix__cls-9{stroke-linejoin:round}.prefix__cls-12,.prefix__cls-7{stroke-width:12.98px}.prefix__cls-12{stroke:#9d32ef}"
           }
         </style>
       </defs>
@@ -48,14 +48,12 @@ function SvgComponent(props) {
       <g id="prefix__Vector">
         <motion.path
           variants={imgVariants}
-          animate="float"
           d="M284.8 695.1v308.4h717V695.1zm269.54 170.36l22.22-37.29 17.08 10.1-5.14 9 39.85 58.22zm196.34-44.93l-19.33-38.86 17.73-8.9 4.79 9.19 70.52-2z"
-          fill="#f3f3f3"
+          fill="#F0ED46"
         />
         <g id="prefix__Layer_3" data-name="Layer 3">
           <path
-            fill="#F0ED46"
-            className="prefix__cls-6"
+            className="prefix__cls-6 hair"
             d="M430.41 581.67c-8.28 5.16-24.5 9.56-57.61 10.63-34.38 0-62.6-33-62.6-76-1-93.7 96.4-111.5 150.6-216.1 24.9-48.1 55.1-46.9 62.7-46.5 16.6.9 40.2 14 40.2 36.9a27.44 27.44 0 01-9.56 21.19M535.56 359.54c-3.58 8.43-11 22.58-13.43 38.81"
           />
         </g>
@@ -91,18 +89,18 @@ function SvgComponent(props) {
           className="prefix__cls-9"
           d="M502.86 364.94a22.83 22.83 0 005.64 2.56c9.09 2.78 18.87-.5 27.06-8M503.15 323.09a106.15 106.15 0 01-20.55 2.71 9 9 0 00-1.9 5.3 9.2 9.2 0 007.7 8.9l.18 1M535.56 359.54c7.12-6.48 13-16.11 16.24-27.64 3.4-12.6 3.1-25-.4-34.9-1.87 1.78-3.8 3.5-5.79 5.14"
         />
-        <path d="M577.9 589.3c18 0 83-.5 94.9-.5" fill="#ffc88e" />
+        <path d="M577.9 589.3c18 0 83-.5 94.9-.5" fill="#9d32ef" />
         <path
           d="M566.8 590.2c19 0 84.6-1.6 95.5-1.6 8.4-13 47.6-81.5 50.2-86.7"
           strokeWidth={5.79}
           strokeLinejoin="round"
           strokeLinecap="round"
-          stroke="#000"
+          stroke="#9d32ef"
           fill="none"
         />
-        <path
-          fill="#F0ED46"
-          stroke="#F0ED46"
+        <motion.path
+          variants={imgVariants}
+          animate="float"
           className="prefix__cls-12"
           d="M363.3 814.8L318.5 770l44.8-44.8M919.2 974.8L964 930l-44.8-44.8"
         />

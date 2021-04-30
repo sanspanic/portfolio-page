@@ -39,7 +39,7 @@ const ProjectDetail = ({
         setCurrProjectIndex((i) => i + 1);
         setClickedOpacity(1);
       }
-    }, [500]);
+    }, [600]);
   };
 
   const handlePrevious = () => {
@@ -52,7 +52,7 @@ const ProjectDetail = ({
         setCurrProjectIndex((i) => i - 1);
         setClickedOpacity(1);
       }
-    }, [500]);
+    }, [600]);
   };
 
   const projectVariants = {
@@ -65,32 +65,33 @@ const ProjectDetail = ({
 
   return (
     <>
-      <div className="relative h-screen flex items-center mt-20 sm:mt-0">
-        <div className="sm:-mt-60 mx-auto w-11/12 lg:w-9/12">
+      <div className="relative h-screen flex items-center mt-20">
+        <div className="pt-10 sm:pt-0 sm:-mt-60 mx-auto w-11/12 lg:w-9/12 fancy-border bg-faded-white">
           <div className="flex justify-between items-start sm:items-center mx-auto carousel">
-            <motion.button onClick={handlePrevious}>
+            <button className="sm:ml-10 md:ml-20" onClick={handlePrevious}>
               <ArrowSquareLeft size={48} />
-            </motion.button>
-            <h2 className="inline font-monofett tracking-widest font-bold text-4xl sm:text-5xl lg:text-6xl text-center mb-10 sm:my-10">
+            </button>
+            <h2 className="inline font-monofett tracking-widest font-bold text-5xl lg:text-6xl text-center mb-10 sm:my-10">
               {title}
             </h2>
-            <button onClick={handleNext}>
+            <button className="sm:mr-10 md:mr-20" onClick={handleNext}>
               <ArrowSquareRight size={48} />
             </button>
           </div>
+          <hr className="mx-40 border-black"></hr>
 
           <motion.div
             animate={{
               opacity: [1, clickedOpacity, 1],
               transition: { duration: 0.7 },
             }}
-            className="flex flex-col sm:flex-row items-center fancy-border bg-faded-white"
+            className="flex flex-col sm:flex-row items-center bg-faded-white"
           >
             {" "}
             <div className="w-9/12 sm:w-4/12 pt-5 sm:pt-0">
               <img alt="project mockup" className="mockup-img" src={src}></img>
             </div>
-            <div className="sm:w-7/12">
+            <div className="sm:w-8/12">
               <div className="flex justify-evenly items-center py-2 mt-5">
                 {stack && stack.includes("javascript") && (
                   <JavaScript className="w-8" />
@@ -144,11 +145,11 @@ const ProjectDetail = ({
                 </motion.span>
               </div>
               <div className="p-2 text-center mt-5">
-                <p className="text-xs  font-monocut w-8/12  mx-auto">
+                <p className="text-xs sm:text-sm  font-monocut w-8/12  mx-auto">
                   {description1}
                 </p>
                 <br></br>
-                <p className="z-40 text-xs  font-monocut w-8/12  mx-auto pb-5">
+                <p className="z-40 text-xs sm:text-sm font-monocut w-8/12  mx-auto pb-5">
                   {description2}
                 </p>
               </div>

@@ -39,6 +39,10 @@
   background: linear-gradient(135deg, #f02fc2 0%, #6094ea 100%);
 }
 
+.dev-card {
+  background-color: #fdd1ff;
+}
+
 .carousel button:focus {
   outline-color: #00f0b5;
 }

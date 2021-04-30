@@ -15,7 +15,7 @@ function App() {
       <BrowserRouter>
         <Navbar />
         <Routes />
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </div>
   );
