@@ -47,7 +47,7 @@ const Welcome = () => {
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ duration: 0.5 }}
                   //className="w-7/12 sm:w-full mx-auto grid grid-cols-5 sm:grid-cols-10 gap-3 sm:gap-4 z-50"
-                  className="flex flex-wrap justify-center z-50"
+                  className="flex flex-wrap justify-center items-start z-50"
                 >
                   <Python className="w-8 md:w-10 mx-1" />{" "}
                   <Javascript className="w-8 md:w-10 mx-1" />{" "}
